@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Cairo', sans-serif;
+  --font-serif: 'Cairo', sans-serif;
+  --font-cairo: 'Cairo', sans-serif;
+  --font-editorial: 'Cairo', sans-serif;
+  --color-basqat-green: #1A634F;
+  --color-basqat-green-light: #227b60;
+  --color-basqat-green-dark: #124a39;
+  --color-basqat-green-deep: #0D372B;
+  --color-basqat-green-hover: #165342;
+  --color-basqat-sage: #8EB568;
+  --color-basqat-sage-light: #EBF3E3;
+  --color-basqat-gold: #54421F;
+  --color-basqat-gold-hover: #423418;
+  --color-basqat-brown: #54421F;
+  --color-basqat-brown-hover: #423418;
+  --color-basqat-bg: #F7F5EE;
+  --color-basqat-card: #FFFFFF;
+  --color-basqat-pill: #EAE6DB;
+  --color-basqat-border: #E5E0D2;
+  --color-basqat-text: #192A27;
+  --color-basqat-gray: #657470;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Cairo', sans-serif;
+  background-color: #F7F5EE;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #F7F5EE;
+  color: #192A27;
+  overflow-x: hidden;
+}
+
+/* Typography unified with Cairo font */
+.font-editorial {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Custom Utilities for the warm ivory & editorial law/consulting style */
+.bg-cream {
+  background-color: #F7F5EE;
+}
+
+.bg-cream-darker {
+  background-color: #EFECE1;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to left, #8EB568, #124a39);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar for modern feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8D6B9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8b6a2;
+}
+
+
