@@ -4,11 +4,13 @@
   "version": "0.0.0",
  "homepage": "https://AsmaBaasher.github.io/basqat",
   "type": "module",
-  "scripts": {"predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
-    
+ "scripts": {
+ "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+   
+  
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit"
