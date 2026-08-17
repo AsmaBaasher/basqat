@@ -5,12 +5,12 @@
  "homepage": "https://AsmaBaasher.github.io/basqat",
   "type": "module",
  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
+  "deploy": "gh-pages -d dist" ,
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
+   
   
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
